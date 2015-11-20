@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.owner.cafetoolkit.custTab_Mod">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Item Name"
+        android:ems="10"
+        android:id="@+id/invItemName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint= "Add/Subtract Values"
+        android:ems="10"
+        android:id="@+id/invASV"
+        android:layout_below="@+id/invAmt"
+        android:layout_toStartOf="@+id/invSum2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sum"
+        android:id="@+id/invSum2"
+        android:layout_alignTop="@+id/invASV"
+        android:layout_alignStart="@+id/invB2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/invAdd2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/invDel2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/invB2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Change in ammount:"
+        android:id="@+id/invAmt"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/invItemName"
+        android:layout_alignEnd="@+id/invDel2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Type in the item that you wish to modify the value of, then proceed to enter a value of change and use signs to indicate the addition or subtraction of an item, if you use 1 of an item type '-1' or if you add an item type '+1' after you have typed in the value and the sign, hit the sum button, this will update the ammount of that item you have.
+        If adding a new item, type the item name and a value and hit the add button.
+        If deleting an item, type the item name and press delete."
+        android:id="@+id/invmodExp"
+        android:layout_below="@+id/invSum2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+
+</RelativeLayout>
